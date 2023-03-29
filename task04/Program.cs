@@ -3,52 +3,21 @@
 int N = 0;
 System.Console.WriteLine("add N ");
 N = int.Parse(Console.ReadLine());
-/*
-int [] array = new int [N];
+
+System.Console.WriteLine("Исходный массив");
+
+int [] numbers = new int[N];
+int lenght = numbers.Length;
 int index = 0;
-int A = 1;
-
-while (A <= N)
+int first = 0;
+while (index<lenght)
 {
-    if ( A % 2 == 0)
+    numbers[first]=first+1;
+    if (numbers[first] %2 == 0)
     {
-        array[index] = A;
+        System.Console.WriteLine(numbers[first]);
     }
-    int A = A+1;
-    int index = index + 1;   
-}
-Console.ReadLine(array);
-
-
-
-void FillArray(int[] even )
-{
-    int length = even.Length;
-    int index = 0;
-    while (index < ltngth) 
-    {
-        if ( A % 2 == 0)
-       
-        even[index] = A;
-        int A = A+1;
-        index++;
-    }
+    index++;
+    first++;
 }
 
-
-
-int a = 1;
-int [] even= new int [N];
-int index = 0;
-while (a <= N)
-{
-    if (a % 2 == 0)
-    {
-        even [index] = a;
-    }
-}
-FillArray(even);
-PrintArray(even);
-System.Console.WriteLine();
-
-*/
